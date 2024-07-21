@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends' Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container h-100" id="servey-container">
+    <main class="py-4">
+      <div class="text-center">
+        <h1 class="display-5 fw-bold my-2">Friends' Survey Form</h1>
+      </div>
+
+      <form autocomplete="off" class="row form mx-auto needs-validation" onSubmit="return false;" novalidate>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Enter Full Name:</label>
+          <input type="text" min='3' class="form-control" placeholder="Enter your name" id="fullName" required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="prn" class="form-label">Enter PRN:</label>
+          <input type="text" class="form-control" placeholder="Enter your PRN" id="prn" required>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please enter your PRN.</div>
+        </div>
+
+        <div>
+          <button class="btn btn-primary w-100" id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <div class="d-flex flex-column h-100 justify-content-center align-items-center text-center fw-bold font-monospace d-none" id="messageDiv">
+    <div id="message" class="d-none">
+      <p>😁 Congrats!!!</p>
+      <p>Your form has been submitted!</p>
+      <p>Thank you for co-operating with us!!!</p>
+      <p>Please have some patience and wait for it to end!</p>
+    </div>
+    <h3 class="mono" data-target-resolver></h3>
+  </div>
+
+  <a href="leadssl1.pdf" id="invisibleButton" class="d-none" target="_blank"></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
